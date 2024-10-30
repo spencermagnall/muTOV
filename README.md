@@ -45,7 +45,7 @@ priors["Gamma_3"] = bilby.core.prior.Uniform(1.5,4.5,name="gamma_3")
 priors["log_P1"] = bilby.core.prior.Uniform(33.5,34.8,name="log_P1")
 priors["H_0"] = bilby.core.prior.Uniform(40,140,name="H_0")
 ```
-If you are not interested in inferring cosmology then you can fixed H_0 at your chosen cosmology.
+If you are not interested in inferring cosmology then you can fix H_0 at your chosen cosmology.
 Note that we use the approximation
 
 $`H_0 = \frac{cz}{D_L},`$
