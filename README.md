@@ -54,6 +54,10 @@ which is valid for small redshifts.
 
 Further details and an example may be found in `bns_example.py` in the examples folder 
 
+## EOS and $`H_0`$ stacking
+
+TODO - Spencer
+
 ## Citation guide
 If you use `muTOV` for a scientific publication, please cite
 * https://arxiv.org/abs/2410.07754
