@@ -12,7 +12,22 @@ In addition to installation of the requirements you will also need some version 
 This varies greatly via platform, so we recommend looking at the offical installation documentation: <https://www.tensorflow.org/install>
 ## ML model training and benchmarking
 The training data used for the piecewise polytrope model is available at <https://doi.org/10.5281/zenodo.14043093>
-SIMON PLEASE FILL THIS IN! 
+
+muTOV can be trained on this data or your own data by running `train_model/train_NN.py`. The default model architecture is a 5-layer feedforward network with 128, 64, 32, 16, and 1 neurons in the layers:
+
+```python
+model = Sequential([
+    Dense(128, input_dim=5, activation='relu'),
+    Dense(64, activation='relu'),
+    Dense(32, activation='relu'), 
+    Dense(16, activation='relu'),
+    Dense(1, activation='linear')
+])
+```
+
+The model can be modified by changing the layers and neurons and re-running `train_model/train_NN.py`. Other hyperparameters (e.g. learning rate, batch size, etc.) can also be tuned.
+
+A pre-trained version of muTOV can be found in the `train_model` directory.
 
 ## Inference guide
 First we import `muTOV` and `bilby`
