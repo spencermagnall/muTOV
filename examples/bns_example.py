@@ -3,16 +3,8 @@ import bilby
 import sys
 import os
 
-# Get the current file's directory
-current_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Construct the path to the `code` directory
-code_dir = os.path.join(current_dir, '..', 'mutov')
-
-# Add the `code` directory to sys.path
-sys.path.append(code_dir)
-
-from source import mutov_lal_binary_neutron_star_H_0
+from muTOV.source import mutov_lal_binary_neutron_star_H_0
 
 """
 Tutorial to demonstrate running parameter estimation on a binary neutron star
