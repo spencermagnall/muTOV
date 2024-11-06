@@ -8,6 +8,8 @@ cd muTOV
 pip install -r requirements.txt
 pip install .
 ```
+In addition to installation of the requirements you will also need some version of tensorflow and keras installed.
+This varies greatly via platform, so we recommend looking at the offical installation documentation: <https://www.tensorflow.org/install>
 ## ML model training and benchmarking
 SIMON PLEASE FILL THIS IN! 
 
